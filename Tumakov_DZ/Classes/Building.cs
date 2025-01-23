@@ -2,10 +2,10 @@
 
 namespace Tumakov_DZ
 {
-    [BuildingDeveloperInfo("Almaz"," 'OOO' RSF")]
+    [BuildingDeveloperInfo("Almaz"," OOO 'RSF'")]
     public class Building
     {
-        private int buildingNumber
+        public int buildingNumber
         {
             get
             {
@@ -16,7 +16,7 @@ namespace Tumakov_DZ
                 buildingNumber = value;
             }
         }
-        private double height
+        public double height
         {
             get
             {
@@ -27,7 +27,7 @@ namespace Tumakov_DZ
                 height = value;
             }
         }
-        private int floors
+        public int floors
         {
             get
             {
@@ -38,7 +38,7 @@ namespace Tumakov_DZ
                 floors = value;
             }
         }
-        private int apartments
+        public int apartments
         {
             get
             {
@@ -49,7 +49,7 @@ namespace Tumakov_DZ
                 apartments = value;
             }
         }
-        private int entrances
+        public int entrances
         {
             get
             {
@@ -66,27 +66,27 @@ namespace Tumakov_DZ
         {
 
         }
-        public string GetBuildingNumber()
+        public string PrintBuildingNumber()
         {
             return $"Уникальный номер здания: {buildingNumber}";
         }
 
-        public string GetHeight()
+        public string PrintHeight()
         {
             return $"Высота здания: {height} м";
         }
 
-        public string GetFloors()
+        public string PrintFloors()
         {
             return $"Этажность здания: {floors} этажей";
         }
 
-        public string GetApartments()
+        public string PrintApartments()
         {
             return $"Общее количество квартир: {apartments}";
         }
 
-        public string GetEntrances()
+        public string PrintEntrances()
         {
             return $"Количество подъездов: {entrances}";
         }
